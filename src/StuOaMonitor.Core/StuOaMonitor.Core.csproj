@@ -1,8 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net10.0</TargetFramework>
-		<Platforms>AnyCPU;x64;x86</Platforms>
+		<OutputType>Library</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>StuOaMonitor</RootNamespace>
+		<AssemblyName>StuOaMonitor.Core</AssemblyName>
+		<Platforms>x64;x86;ARM64</Platforms>
 
 		<Description>汕头大学 OA 通知监控核心库（配置、日志、抓取、渲染、业务服务）。</Description>
+		<IsPackable>true</IsPackable>
+		<PackageId>StuOaMonitor.Core</PackageId>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Platform)' == 'x64'">
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'x86'">
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+		<PlatformTarget>ARM64</PlatformTarget>
 	</PropertyGroup>
 </Project>

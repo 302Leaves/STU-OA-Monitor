@@ -1,29 +1,29 @@
 <Solution>
   <Folder Name="/src/">
     <Project DefaultStartup="true" Path="src/StuOaMonitor.App/StuOaMonitor.App.csproj">
-      <Platform Solution="*|AnyCPU" Project="AnyCPU" />
       <Platform Solution="*|x64"    Project="x64" />
       <Platform Solution="*|x86"    Project="x86" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
     </Project>
     <Project Path="src/StuOaMonitor.Core/StuOaMonitor.Core.csproj">
-      <Platform Solution="*|AnyCPU" Project="AnyCPU" />
       <Platform Solution="*|x64"    Project="x64" />
       <Platform Solution="*|x86"    Project="x86" />
+      <Platform Solution="*|ARM64" Project="ARM64" />
     </Project>
   </Folder>
   <Configurations>
     <Configuration Name="Debug">
-      <Platform Name="AnyCPU" />
       <Platform Name="x64" />
       <Platform Name="x86" />
+      <Platform Name="ARM64" />
     </Configuration>
     <Configuration Name="Release">
-      <Platform Name="AnyCPU" />
       <Platform Name="x64" />
       <Platform Name="x86" />
+      <Platform Name="ARM64" />
     </Configuration>
-    <Platform Name="AnyCPU" />
     <Platform Name="x64" />
     <Platform Name="x86" />
+    <Platform Name="ARM64" />
   </Configurations>
 </Solution>

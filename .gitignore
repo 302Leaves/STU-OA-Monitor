@@ -1,9 +1,13 @@
 bin/
 obj/
 build/
+publish/
 .nuget/
 *.user
 *.suo
 .vs/
+.git/
+
 *.log
 *.bat
+*.ps1
