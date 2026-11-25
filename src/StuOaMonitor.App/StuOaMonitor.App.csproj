@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Platforms>AnyCPU;x64;x86</Platforms>
+
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>StuOaMonitor</RootNamespace>
+		<AssemblyName>StuOaMonitor</AssemblyName>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<IncludePackageReferencesDuringMarkupCompilation>false</IncludePackageReferencesDuringMarkupCompilation>
+		<!-- 可选：exe 图标（若暂未准备 app.ico 可先删掉此行） -->
+    	<Applicationicon>Assets\app.ico</Applicationicon> 
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\StuOaMonitor.Core\StuOaMonitor.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- ✅ 纯 WPF 托盘库，.NET 6+ 兼容，.NET 10 OK -->
+		<PackageReference Include="H.NotifyIcon.Wpf" Version="2.1.3" />
+	</ItemGroup>
+
+	<!-- 托盘用图标资源（如果不想准备 ico 文件，删掉这行 + ApplicationIcon 即可用系统默认图标兜底） -->
+	<ItemGroup>
+		<Resource Include="Assets\app.ico" />
+	</ItemGroup> 
+
+</Project>
