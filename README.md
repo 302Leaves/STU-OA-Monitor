@@ -53,4 +53,10 @@
 
 ## 致谢
 
-- 托盘与通知库： [H.NotifyIcon](https://github.com/HavenDV/H.NotifyIcon)（MIT）。
+### 参考项目
+
+- 抓取与解析思路： [tszyihuang/STU-OA-Skill](https://github.com/tszyihuang/STU-OA-Skill)
+
+### 第三方库
+
+- 托盘与通知库： [HavenDV/H.NotifyIcon](https://github.com/HavenDV/H.NotifyIcon)（MIT）。
